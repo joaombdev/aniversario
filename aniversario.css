@@ -1,4 +1,4 @@
-*{
+* {
     margin: 0px;
     padding: 0px;
 }
@@ -8,23 +8,32 @@ body {
     height: auto;
 }
 
-  .parabens {
+.parabens {
     font-size: 40px;
     text-align: center;
     align-content: center;
     /* border: solid 2px black; */
     color: white;
     justify-content: center;
-  }
+}
 
-  #alinhamento {
+.textinho {
+    font-size: 25px;
+    text-align: center;
+    align-content: center;
+    /* border: solid 2px black; */
+    color: white;
+    justify-content: center;
+}
+
+#alinhamento {
     align-content: center;
     /* border: solid 2px black; */
     height: 100%;
     background-color: #F9B5AC;
-  }
-  
-  #balloon-container {
+}
+
+#balloon-container {
     height: 100vh;
     /* padding: 1em; */
     box-sizing: border-box;
@@ -32,16 +41,16 @@ body {
     flex-wrap: wrap;
     overflow: hidden;
     transition: opacity 500ms;
-  }
-  
-  .balloon {
+}
+
+.balloon {
     height: 125px;
     width: 105px;
     border-radius: 75% 75% 70% 70%;
     position: relative;
-  }
-  
-  .balloon:before {
+}
+
+.balloon:before {
     content: "";
     height: 75px;
     width: 1px;
@@ -53,23 +62,28 @@ body {
     left: 0;
     right: 0;
     margin: auto;
-  }
-  
-  .balloon:after {
-      content: "▲";
-      text-align: center;
-      display: block;
-      position: absolute;
-      color: inherit;
-      top: 120px;
-      left: 0;
-      right: 0;
-      margin: auto;
-  }
-  
-  @keyframes float {
-    from {transform: translateY(100vh);
-    opacity: 1;}
-    to {transform: translateY(-300vh);
-    opacity: 0;}
-  }
+}
+
+.balloon:after {
+    content: "▲";
+    text-align: center;
+    display: block;
+    position: absolute;
+    color: inherit;
+    top: 120px;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+@keyframes float {
+    from {
+        transform: translateY(100vh);
+        opacity: 1;
+    }
+
+    to {
+        transform: translateY(-300vh);
+        opacity: 0;
+    }
+}
