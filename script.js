@@ -1,3 +1,25 @@
+document.addEventListener('DOMContentLoaded', () => {
+    const balloonColors = ['#FF6F61', '#FFCC00', '#6B8E23', '#00BFFF', '#FF1493'];
+
+    function createBalloon() {
+        const balloon = document.createElement('div');
+        balloon.classList.add('balloon');
+        balloon.style.backgroundColor = balloonColors[Math.floor(Math.random() * balloonColors.length)];
+        balloon.style.left = `${Math.random() * 100}vw`;
+        balloon.style.bottom = '-100px';
+        balloon.style.animation = 'rise 10s linear infinite';
+        document.querySelector('.balloons').appendChild(balloon);
+        
+        balloon.addEventListener('animationend', () => {
+            balloon.remove();
+        });
+    }
+
+    for (let i = 0; i < 20; i++) {
+        createBalloon();
+    }
+});
+
 const balloonContainer = document.getElementById("balloon-container");
 
 function random(num) {

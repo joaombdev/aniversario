@@ -1,4 +1,9 @@
-const balloonContainer = document.getElementById("balloon-container");
+
+$('.card').click(function(){
+    $(this).toggleClass('flipped');
+  });
+
+  const balloonContainer = document.getElementById("balloon-container");
 
 function random(num) {
   return Math.floor(Math.random() * num);

@@ -8,6 +8,21 @@ body {
     height: auto;
 }
 
+a {
+    color: white;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+button {
+    color: white;
+    text-decoration: none;
+}
+
+
 .parabens {
     font-size: 40px;
     text-align: center;
@@ -87,3 +102,20 @@ body {
         opacity: 0;
     }
 }
+
+
+.headline {
+    align-items: center;
+    background-color: var(--color);
+    display: flex;
+    font-family: 'Lexend Deca', sans-serif;
+    font-weight: 700;
+    font-size: calc(1rem + 15vmin);
+    height: 100vh;
+    justify-content: center;
+    overflow: hidden;
+    perspective: 1000px;
+    scroll-snap-align: start;
+    width: 100vw;
+}
+  
